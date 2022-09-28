@@ -1,0 +1,10 @@
+﻿@using WebBanVali.Models;
+@model List<tLoaiSP>
+
+@foreach (var item in Model)
+{
+    <li><a href="@Url.Action("ProductsByCategory","Product", new {@MaLoai=item.MaLoai})">@item.Loai</a></li>
+}
+
+
+
